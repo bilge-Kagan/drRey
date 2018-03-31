@@ -1,0 +1,205 @@
+<p id="hsg" align="center">
+    Görüntülemek üzere bir istatistik kategorisi seçiniz.
+</p>
+<div id="select_panel">
+  <%= form_for :stat_opt, url: stat_page_url, method: :get, html: {id: 'main_select'} do |f| %>
+      <div id="main_select">
+        <ul id="category_list">
+          <li>
+            <%= f.radio_button :category_select, 'ulke_op', id: 'ulke_opt', checked: (true if @response_hash[:ulke]) %>
+            <%= f.label 'Ülke Kayıtları', for: 'ulke_opt' %>
+          </li>
+          <li>
+            <%= f.radio_button  :category_select, 'il_op', id: 'il_opt', checked: (true if @response_hash[:il]) %>
+            <%= f.label 'İl Kayıtları', for: 'il_opt' %>
+          </li>
+          <li>
+            <%= f.radio_button :category_select, 'ilce_op', id: 'ilce_opt', checked: (true if @response_hash[:ilce]) %>
+            <%= f.label 'İlçe Kayıtları', for: 'ilce_opt' %>
+          </li>
+          <li>
+            <%= f.radio_button :category_select, 'hastane_op', id: 'hastane_opt', checked: (true if @response_hash[:hastane]) %>
+            <%= f.label 'Hastane Kayıtları', for: 'hastane_opt' %>
+          </li>
+          <li>
+            <%= f.radio_button :category_select, 'dr_op', id: 'doktor_opt', checked: (true if @response_hash[:doktor]) %>
+            <%= f.label 'Doktor Kayıtları', for: 'doktor_opt' %>
+          </li>
+          <li>
+            <%= f.radio_button :category_select, 'hasta_op', id: 'hasta_opt', checked: (true if @response_hash[:hasta]) %>
+            <%= f.label 'Hasta Kayıtları', for: 'hasta_opt' %>
+          </li>
+        </ul>
+        <%= f.submit('Kayıtları Gör', id: 'stat_opt_sub') %>
+      </div>
+  <% end %>
+  <div id="spec_select">
+    <% if @response_hash[:il] %>
+      <%= select_tag :il_list, options_for_select(il_multiple(@response_hash[:il])), {prompt: 'Tümünü Seç', id: 'il_optt', multiple: true, name: 'spec'} %>
+    <% elsif @response_hash[:ilce] %>
+      <%= select_tag :ilce_list, options_for_select(ilce_multiple(@response_hash[:ilce])), {prompt: 'Tümünü Seç', id: 'ilce_optt', multiple: true, name: 'spec'} %>
+    <% elsif @response_hash[:hastane] %>
+      <%= select_tag :hastane_list, options_for_select(hastane_multiple(@response_hash[:hastane])), {prompt: 'Tümünü Seç', id: 'hastane_optt', multiple: true, name: 'spec'} %>
+    <% elsif @response_hash[:doktor] %>
+      <%= select_tag :doktor_list, options_for_select(doktor_multiple(@response_hash[:doktor])), {prompt: 'Tümünü Seç', id: 'doktor_optt', multiple: true, name: 'spec'} %>
+    <% elsif @response_hash[:hasta] %>
+      <%= select_tag :hasta_list, options_for_select(hasta_multiple(@response_hash[:hasta])), {prompt: 'Tümünü Seç', id: 'hasta_optt', multiple: true, name: 'spec'} %>
+    <% end  %>
+  </div>
+  <div id="unselect">
+    <%= select_tag :unselect, options_for_select([]), {id: 'un_select', multiple: true} %>
+  </div>
+</div>
+<br>
+<br>
+<div id="veri">
+  <% if @response_hash[:il] %>
+    <table id="il_veri_tablo" align="center">
+      <tr>
+        <th>..</th>
+        <th>İl</th>
+        <th>SonReyPuanı</th>
+        <th>ReyPuanDeğişimi(%)</th>
+        <th>OrtalamaReyPuanı</th>
+        <th>Memnuniyet(%)</th>
+      </tr>
+      <% @response_hash[:il].each_with_index do |item, index|%>
+          <tr>
+            <td><%= index + 1 %># </td>
+            <td id="prm_il"><%= item[0] %></td>
+            <td><%= item[1].to_f %></td>
+            <td><%= item[2].to_f %></td>
+            <td><%= item[3].to_f %></td>
+            <td><%= item[4].to_f %></td>
+          </tr>
+      <% end %>
+    </table>
+  <% elsif @response_hash[:ilce] %>
+    <table id="ilce_veri_tablo" align="center">
+      <tr>
+        <th>..</th>
+        <th>İl</th>
+        <th>İlçe</th>
+        <th>SonReyPuanı</th>
+        <th>ReyPuanDeğişimi(%)</th>
+        <th>OrtalamaReyPuanı</th>
+        <th>Memnuniyet(%)</th>
+      </tr>
+      <% @response_hash[:ilce].each_with_index do |item, index| %>
+          <tr>
+            <td id="<%= index + 1 %>"><%= index + 1 %># </td>
+            <td><%= item[0] %></td>
+            <td><%= item[1] %></td>
+            <td><%= item[2].to_f %></td>
+            <td><%= item[3].to_f %></td>
+            <td><%= item[4].to_f %></td>
+            <td><%= item[5].to_f %></td>
+          </tr>
+      <% end %>
+    </table>
+  <% elsif @response_hash[:hastane] %>
+      <table id="hastane_veri_tablo" align="center">
+        <tr>
+          <th>..</th>
+          <th>KurumKodu</th>
+          <th>Hastane</th>
+          <th>HastaSayısı</th>
+          <th>ReyKullanımOranı(%)</th>
+          <th>ReyPuanı</th>
+          <th>Memnuniyet(%)</th>
+          <th>Dönem</th>
+        </tr>
+        <% @response_hash[:hastane].each_with_index do |item, index| %>
+              <tr>
+                <td><%= index + 1 %># </td>
+                <td id="prm_kurum_kodu"><%= item[0].to_s %></td>
+                <td><%= item[1] %></td>
+                <td><%= item[4].to_i %></td>
+                <td><%= item[5].to_f %></td>
+                <td><%= item[6].to_f %></td>
+                <td><%= item[7].to_f %></td>
+                <td><%= item[2].to_s + ' / ' + item[3].to_s %></td>
+              </tr>
+        <% end %>
+      </table>
+  <% elsif @response_hash[:doktor] %>
+      <table id="doktor_veri_tablo" align="center">
+        <tr>
+          <th>..</th>
+          <th>İsim</th>
+          <th>Soyisim</th>
+          <th>TCNumarası</th>
+          <th>HastaSayısı</th>
+          <th>ReyKullanımOranı(%)</th>
+          <th>ReyPuanı</th>
+          <th>Memnuniyet(%)</th>
+          <th>BandDeğeri</th>
+          <th>Dönem</th>
+        </tr>
+        <% @response_hash[:doktor].each_with_index do |item, index| %>
+            <tr>
+              <td><%= index + 1 %># </td>
+              <td><%= item[0] %></td>
+              <td><%= item[1] %></td>
+              <td id="prm_tc"><%= item[2].to_s %></td>
+              <td><%= item[5].to_i %></td>
+              <td><%= item[6].to_f %></td>
+              <td><%= item[7].to_f %></td>
+              <td><%= item[8].to_f %></td>
+              <td><%= item[9].to_i %></td>
+              <td><%= item[3].to_s + ' / ' + item[4].to_s %></td>
+            </tr>
+        <% end %>
+      </table>
+  <% elsif @response_hash[:hasta] %>
+      <table id="hasta_veri_tablo" align="center">
+        <tr>
+          <th>..</th>
+          <th>İsim</th>
+          <th>Soyisim</th>
+          <th>TCNumarası</th>
+          <th>ToplamMuayeneSayısı</th>
+          <th>ReyKullanımOranı(%)</th>
+          <th>ReyPuanı</th>
+          <th>Memnuniyet(%)</th>
+        </tr>
+        <% @response_hash[:hasta].each_with_index do |item, index| %>
+            <tr>
+              <td><%= index + 1 %># </td>
+              <td><%= item[0] %></td>
+              <td><%= item[1] %></td>
+              <td id="prm_tc"><%= item[2].to_s %></td>
+              <td><%= item[3].to_i %></td>
+              <td><%= item[4].to_f %></td>
+              <td><%= item[5].to_f %></td>
+              <td><%= item[6].to_f %></td>
+            </tr>
+        <% end %>
+      </table>
+  <% elsif @response_hash[:ulke] %>
+      <table id="ulke_veri_tablo" align="center">
+        <tr>
+          <th>..</th>
+          <th>HastaSayısı</th>
+          <th>ReyKullanımOranı(%)</th>
+          <th>ReyPuanı</th>
+          <th>Memnuniyet</th>
+          <th>BazPuan</th>
+          <th>Dönem</th>
+        </tr>
+        <% @response_hash[:ulke].each_with_index do |item, index| %>
+            <tr>
+              <td><%= index + 1 %># </td>
+              <td><%= item[0].to_i %></td>
+              <td><%= item[1].to_f %></td>
+              <td><%= item[2].to_f %></td>
+              <td><%= item[3].to_f %></td>
+              <td><%= item[4].to_f %></td>
+              <td><%= item[5].to_s + ' / ' + item[6].to_s %></td>
+            </tr>
+        <% end %>
+      </table>
+  <% end  %>
+</div>
+
+<% javascript_include_tag 'data_gets.js' %>

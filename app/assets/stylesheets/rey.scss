@@ -1,0 +1,145 @@
+// Place all the styles related to the rey controller here.
+// They will automatically be included in application.css.
+
+div#mail_list{
+  margin-top: 50px;
+
+}
+
+table#mail_table{
+  margin: 0 auto;
+
+  th,td{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+div#log_panel{
+  margin-top: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+div#mail_log_container {
+  width: 600px;
+  clear: both;
+}
+
+div#mail_log_container input{
+  width: 100%;
+  clear: both;
+}
+
+#login_panel{
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#rey_log_tc, #rey_log_pass{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div#mail_log_container label{
+  color: #7cd6fe;
+  font-weight: 600;
+}
+
+#rey_log_sub{
+  color: #87aaff;
+  background-color: rgba(0,0,0,0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 130px;
+}
+#rey_log_sub:hover{
+  background-color: rgba(0,0,0,0.25);
+}
+
+// ###########################################3
+
+p#rey_page_hgd{
+  max-width: 500px;
+  min-width: 500px;
+  color: #87aaff;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+p#log_error{
+  max-width: 500px;
+  min-width: 500px;
+  color: #fe0c00;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+div#rey{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+#rey_form select{
+  background-color: transparent;
+  color: rgba(249,144,23,0.82);
+  border: solid 1px rgba(249,144,23,0.82);
+  font-size: 16px;
+}
+
+#rey_form select:active{
+  background-color: rgba(0,0,0,0.7);
+}
+
+#yorum{
+  width: 190px;
+  height: 80px;
+  resize: none;
+  background-color: rgba(0,0,0,0.6);
+  color: rgba(249,144,23,0.82);
+
+}
+
+table#rey_form_table{
+  max-width: 700px;
+  color: #35a2ff;
+  margin: 0 auto;
+    tr {
+    background-color: rgba(0,0,0,0.36);
+  }
+  th, td {
+    padding: 20px;
+  }
+}
+
+#rey_sub{
+  color: #87aaff;
+  background-color: rgba(0,0,0,0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 130px;
+}
+#rey_sub:hover{
+  background-color: rgba(0,0,0,0.25);
+}
+
+div#r_use{
+  font-family: KronaOne;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(43,43,43,0.5);
+  color: #4e99ff;
+  font-size: 16px;
+  p{
+    margin-bottom: 200%;
+  }
+}

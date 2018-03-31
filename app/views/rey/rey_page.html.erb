@@ -1,0 +1,68 @@
+<% if @log_result %>
+  <p id="log_error"><%= @log_result %></p>
+<% else %>
+    <p id="rey_page_hgd">
+      Bu sayfa üzerinde değerlendirmenizi yaparak gönderebilirsiniz.<br>
+      İlginiz için teşekkür ederiz..
+    </p>
+    <div id="rey">
+      <%= form_for :rey_cevap, url: rey_use_url(myn_id: @muayene_id), html: {id: 'rey_form'} do |f| %>
+          <table id="rey_form_table">
+            <tr>
+              <th>Sorular</th>
+              <th>Puanlama</th>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  Doktorum beni aktif bir şekilde muayene etti.
+                </p>
+              </td>
+              <td><%= f.select :soru_1, 1..10, {prompt: 'Rey'}, id: 'puan' %></td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  Doktorum benimle konuşurken yeteri kadar göz teması
+                  kurdu.
+                </p>
+              </td>
+              <td><%= f.select :soru_2, 1..10, {prompt: 'Rey'}, id: 'puan' %></td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  Doktorum rahatsızlığıma yönelik yeterince bilgi aldı.
+                </p>
+              </td>
+              <td><%= f.select :soru_3, 1..10, {prompt: 'Rey'}, id: 'puan' %></td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  Doktorum incitici ve rencide edici bir davranışta
+                  bulunmadı.
+                </p>
+              </td>
+              <td><%= f.select :soru_4, 1..10, {prompt: 'Rey'}, id: 'puan' %></td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  Doktorumun koyduğu teşhisi ve tedaviyi doğru buluyorum.
+                </p>
+              </td>
+              <td><%= f.select :soru_5, 1..10, {prompt: 'Rey'}, id: 'puan' %></td>
+            </tr>
+            <tr>
+              <td>Özel Yorum</td>
+              <td><%= f.text_area :yorum, id: 'yorum' %></td>
+            </tr>
+          </table>
+
+          <%= f.submit('Gönder', id: 'rey_sub') %>
+      <% end %>
+    </div>
+<% end %>
+
+<% javascript_include_tag 'rey_page.js' %>

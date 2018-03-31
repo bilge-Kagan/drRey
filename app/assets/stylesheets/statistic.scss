@@ -1,0 +1,189 @@
+// Place all the styles related to the statistic controller here.
+// They will automatically be included in application.css.
+
+div#select_panel{
+  font-family: PT_Sans-Caption-Web;
+  color: #CCCCCC;
+  display: inline-flex;
+  width: 180px;
+  ul#category_list{
+    list-style: none;
+    width: 180px;
+    li{
+      padding-top: 3px;
+      padding-bottom: 3px;
+      font-size: 16px;
+    }
+    li:hover{
+      font-size: 18px;
+      color: #35a2ff;
+    }
+  }
+}
+
+div#spec_select{
+  margin-left: 50px;
+  margin-top: 30px;
+  max-width: 1px;
+}
+
+div#unselect{
+  margin-top: 110px;
+  max-width: 500px;
+}
+
+#hastane_optt, #il_optt, #ilce_optt, #doktor_optt, #hasta_optt{
+  max-width: 500px;
+  min-width: 500px;
+  background-color: rgba(105,249,230,0.42);
+  color: #000000;
+}
+
+#un_select{
+  max-width: 500px;
+  min-width: 500px;
+  background-color: rgba(105,249,230,0.42);
+  color: #000000;
+  display: none;
+}
+
+#stat_opt_sub{
+  color: #87aaff;
+  background-color: rgba(0,0,0,0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-left: 50px;
+  width: 130px;
+}
+#stat_opt_sub:hover{
+  background-color: rgba(0,0,0,0.25);
+}
+
+p#hsg{
+  font-family: PT_Sans-Caption-Web;
+  max-width: 500px;
+  min-width: 500px;
+  color: #87aaff;
+  text-align: center;
+  margin-left: 200px;
+}
+
+th,td{
+  border: solid 2px transparent;
+}
+
+th{
+  border-bottom-width: 2px;
+  background-color: rgba(0,0,0,0.65);
+  color: #35a2ff;;
+}
+td{
+  color: #63bea5;;
+}
+
+tr:nth-child(even){
+  background-color: rgba(0,0,0,0.45);
+}
+
+tr:nth-child(odd){
+  background-color: rgba(74,74,74,0.45);
+}
+
+tr:hover{
+  background-color: rgba(124,214,254,0.25);
+}
+
+#veri{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+// #################################################
+
+p#re_hgd{
+  font-family: PT_Sans-Caption-Web;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: 200px;
+  color: #87aaff;
+  margin-bottom: 50px;
+}
+
+div#baz_puan{
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+div#baz_puan label {
+  color: #5775f4;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+div#baz_puan input[type=number]{
+  background-color: rgba(0,0,0,0.44);
+  color: #ffffff;
+  border: 1px solid #ae4626;
+  margin-left: 5px;
+  text-align: center;
+}
+
+#baz_puan_sub{
+  color: #87aaff;
+  background-color: rgba(0,0,0,0.45);
+  border: solid 1px #87aaff;
+  font-size: 14px;
+  margin-left: 15px;
+  width: 100px;
+}
+#baz_puan_sub:hover{
+  background-color: rgba(0,0,0,0.25);
+}
+
+#re_calc_but{
+  color: #63bea5;
+  background-color: rgba(0,0,0,0.45);
+  border: solid 1px #63bea5;
+  font-size: 14px;
+  width: 170px;
+  height: 40px;
+  margin-top: 30px;
+}
+#re_calc_but:hover{
+  background-color: rgba(124,214,254,0.25);
+}
+
+fieldset#baz_p{
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+div#donem_tablo{
+  text-align: center;
+  margin-top: 80px;
+}
+table#donem_list{
+  margin: 0 auto;
+}
+
+// ################################
+
+p#dr_hgd{
+  font-family: PT_Sans-Caption-Web;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: 300px;
+  color: #87aaff;
+  margin-bottom: 50px;
+}
+
+div#veri_tablosu{
+  width: 100%;
+}
+table#dr_basarim{
+  width: 700px;
+  margin: 0 auto;
+}

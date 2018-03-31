@@ -1,0 +1,36 @@
+<div id="hasta_kayit_form">
+  <fieldset>
+    <legend>Hasta Kayıt</legend>
+    <%= form_for :hasta_kayit, url: hst_reg_path, html: {id: 'hasta_kayit'} do |f| %>
+        <div id="in_container">
+          <%= f.label 'İsim :' %>
+          <%= f.text_field :isim, id: 'hasta_isim_in', autocomplete: 'off' %>
+          <br>
+          <%= f.label 'Soyisim :' %>
+          <%= f.text_field :soyisim, id: 'hasta_syisim_in', autocomplete: 'off' %>
+          <br>
+          <%= f.label 'TC :' %>
+          <%= f.number_field :tc, type: 'number', maxlength: 11, id: 'hasta_tc_in', autocomplete: 'off' %>
+          <br>
+          <%= f.label 'E-Posta Adresi :' %>
+          <%= f.email_field :eposta, id: 'hasta_eposta', autocomplete: 'off' %>
+          <br>
+          <%= f.label 'Hastane :' %>
+          <%= f.select :hastane, hastane_select(@wrapper_hash_2[:hastane]),
+                       {prompt: 'Hastane Seçiniz'}, :id => 'hasta_hstn_sel' %>
+          <br>
+          <%= f.label 'Servis :' %>
+          <%= f.select :servis, servis_select(@wrapper_hash_2[:servis]),
+                       {prompt: 'Servis Seçiniz'}, :id => 'hasta_svs_sel' %>
+          <br>
+          <%= f.label 'Doktor :' %>
+          <%= f.select :doktor, doktor_select(@wrapper_hash_2[:doktor]),
+                       {prompt: 'Doktor Seçiniz'}, :id => 'hasta_dr_sel' %>
+          <br>
+        </div>
+        <%= f.submit('Kayıt', :id => 'hasta_reg_sub') %>
+    <% end %>
+  </fieldset>
+</div>
+
+<% javascript_include_tag 'hst_reg_page.js' %>

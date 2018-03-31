@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DrRey</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div id="header">
+      <span style="color: #008eff"><span style="color: #02ff34">Dr</span>Rey</span>
+    </div>
+    <div id="main_navigation">
+      <ul id="link_list">
+        <li><%= link_to 'Ana Sayfa', root_path %></li>
+        <li><%= link_to 'Hasta Kayıt', hst_reg_p_url %></li>
+        <li><%= link_to 'Doktor Kayıt/Güncelleme', dr_reg_p_url %></li>
+        <li><%= link_to 'Mail Listesi', mail_page_url  %></li>
+        <li><%= link_to 'İstatistik Sayfası', stat_page_url %></li>
+        <li><%= link_to 'Dönemlik Hesaplama', recalc_url, method: :post %></li>
+        <li><%= link_to 'Doktor Başarım Verileri', dr_success_url %></li>
+      </ul>
+    </div>
+    <div id="footer">
+      Pâye, <%= Time.now.year %>
+    </div>
+    <div id="content">
+      <%= yield %>
+    </div>
+  </body>
+</html>

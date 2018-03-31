@@ -1,0 +1,864 @@
+@font-face {
+  font-family: 'KronaOne';
+  src: local("KronaOne"), local("KronaOne-Regular"), url(/assets/KronaOne-Regular-273463916f96a4707e697e3013d955cde8154b4e6d635a55132e7a12f276534c.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT_Sans-Caption-Web';
+  src: local("PT_Sans-Caption-Web"), local("PT_Sans-Caption-Web-Regular"), url(/assets/PT_Sans-Caption-Web-Regular-91d763dd9e8284938be814b76919b0bd97510ec342434e7ec7a56f9fc58b36c4.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Baloo';
+  src: local("Baloo"), local("Baloo-Regular"), url(/assets/Baloo-Regular-718843345772c5dac9e57dd51803f818455b427366906f637b3cb4df1b365da6.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DrSugiyama';
+  src: local("DrSugiyama"), local("DrSugiyama-Regular"), url(/assets/DrSugiyama-Regular-8436c1eae3a06126a6e0aa85b1dffb1b507d39eab7b6512a9bb1adc5d514d9b9.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ruthie';
+  src: local("Ruthie"), local("Ruthie-Regular"), url(/assets/Ruthie-Regular-7c5a1bfbcd9b0bf6f709686bdcefa4b06305f60fecdd290c1c2782de31559232.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+html {
+  background: transparent url(/assets/background-19201080-e17e68b147ecbbeece56b0434877c2d1fc8a50ba03d83ac2a6c869980ff76b1a.jpg) no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+/* line 10, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+div#header {
+  font-family: DrSugiyama;
+  font-size: 108px;
+  text-align: center;
+  width: 270px;
+  height: 150px;
+  position: fixed;
+  background-color: transparent;
+  border-radius: 2%;
+  border-color: rgba(117, 112, 102, 0.88);
+}
+
+/* line 22, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+ul#link_list {
+  display: block;
+  list-style: none;
+}
+
+/* line 26, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+ul#link_list li {
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-size: 18px;
+}
+
+/* line 33, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+div#main_navigation {
+  font-family: Baloo;
+  background-color: rgba(31, 26, 26, 0.54);
+  border-radius: 2%;
+  border-color: rgba(117, 112, 102, 0.88);
+  width: 270px;
+  text-align: left;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  position: fixed;
+  margin-top: 190px;
+}
+
+/* line 46, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+a {
+  color: #b4b7a8;
+  text-decoration: none;
+}
+
+/* line 50, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+a:hover {
+  color: #2378ff;
+  font-size: 20px;
+}
+
+/* line 55, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+div#content {
+  background-color: rgba(31, 26, 26, 0.54);
+  border-radius: 2%;
+  border-color: rgba(117, 112, 102, 0.88);
+  height: 97vh;
+  margin-left: 330px;
+  margin-right: 10px;
+  overflow-x: auto;
+}
+
+/* line 65, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+div#footer {
+  font-family: Ruthie;
+  font-size: 26px;
+  text-align: center;
+  width: 270px;
+  height: 40px;
+  margin-top: 615px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2%;
+  border-color: rgba(117, 112, 102, 0.88);
+  color: #ffffff;
+}
+
+/* line 79, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 82, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+select {
+  cursor: pointer;
+}
+
+/* line 86, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/general.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+/* line 4, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#hasta_kayit_form {
+  width: 100%;
+  text-align: left;
+  margin-top: 100px;
+}
+
+/* line 10, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#in_container select {
+  width: 300px;
+}
+
+/* line 15, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#hasta_svs_sel {
+  margin-left: 25px;
+}
+
+/* line 18, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#hasta_hstn_sel {
+  margin-left: 11px;
+}
+
+/* line 21, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#hasta_dr_sel {
+  margin-left: 19px;
+}
+
+/* line 26, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#hasta_kayit {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 32, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#in_container label {
+  color: #7cd6fe;
+  font-weight: 600;
+}
+
+/* line 36, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+legend {
+  color: #63bea5;
+  font-size: 20px;
+}
+
+/* line 41, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#hasta_isim_in, #hasta_syisim_in, #hasta_tc_in, #hasta_eposta,
+#hasta_hstn_sel, #hasta_svs_sel, #hasta_dr_sel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 47, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#in_container {
+  width: 600px;
+  clear: both;
+}
+
+/* line 51, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#in_container input {
+  width: 100%;
+  clear: both;
+}
+
+/* line 56, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+fieldset {
+  margin: 0 auto;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.46);
+}
+
+/* line 63, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#hasta_reg_sub {
+  color: #87aaff;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-left: 225px;
+  margin-top: 30px;
+  width: 130px;
+}
+
+/* line 72, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#hasta_reg_sub:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 78, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#dr_kayit_form {
+  width: 100%;
+  text-align: left;
+  margin-top: 40px;
+}
+
+/* line 84, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#dr_container1 {
+  width: 600px;
+  clear: both;
+}
+
+/* line 88, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#dr_container1 input {
+  width: 100%;
+  clear: both;
+}
+
+/* line 93, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#dr_container1 label {
+  color: #7cd6fe;
+  font-weight: 600;
+}
+
+/* line 98, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#doktor_kayit {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 104, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_container1 select {
+  width: 300px;
+}
+
+/* line 108, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_isim_in, #dr_soyisim_in, #dr_tc_in,
+#dr_hastane_sel, #dr_servis_sel, #dr_ilce_sel, #dr_il_sel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 114, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_hastane_sel {
+  margin-left: 15px;
+}
+
+/* line 115, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_servis_sel {
+  margin-left: 29px;
+}
+
+/* line 116, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_ilce_sel {
+  margin-left: 45px;
+}
+
+/* line 117, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_il_sel {
+  margin-left: 59px;
+}
+
+/* line 119, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_reg_sub {
+  color: #87aaff;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-left: 225px;
+  margin-top: 30px;
+  width: 130px;
+}
+
+/* line 128, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_reg_sub:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 134, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#dr_update_form {
+  width: 100%;
+  text-align: left;
+  margin-top: 40px;
+  display: none;
+  padding-bottom: 118px;
+}
+
+/* line 142, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#dr_container2 {
+  width: 600px;
+  clear: both;
+}
+
+/* line 146, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#dr_container2 input {
+  width: 100%;
+  clear: both;
+}
+
+/* line 151, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#dr_container2 label {
+  color: #7cd6fe;
+  font-weight: 600;
+}
+
+/* line 156, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#doktor_upt {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 162, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_container2 select {
+  width: 300px;
+}
+
+/* line 166, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_isim_upt, #dr_hastane_upt, #dr_servis_upt, #dr_ilce_upt, #dr_il_upt {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 171, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_isim_upt {
+  margin-left: 15px;
+}
+
+/* line 172, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_hastane_upt {
+  margin-left: 97px;
+}
+
+/* line 173, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_servis_upt {
+  margin-left: 111px;
+}
+
+/* line 174, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_ilce_upt {
+  margin-left: 128px;
+}
+
+/* line 175, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_il_upt {
+  margin-left: 142px;
+}
+
+/* line 177, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_upt_sub {
+  color: #87aaff;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-left: 225px;
+  margin-top: 30px;
+  width: 130px;
+}
+
+/* line 186, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#dr_upt_sub:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 192, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#buttons {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* line 198, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#kayit_but {
+  color: #63bea5;
+  border: solid 1px #63bea5;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  margin-left: 350px;
+}
+
+/* line 208, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+#upt_but {
+  color: #63bea5;
+  border: solid 1px #63bea5;
+  font-size: 14px;
+  width: 130px;
+  margin-left: 20px;
+  height: 40px;
+}
+
+/* line 218, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+.but_active {
+  background-color: rgba(124, 214, 254, 0.25);
+}
+
+/* line 222, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+.but_passive {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* line 228, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#wrapper {
+  font-family: KronaOne;
+  width: 750px;
+  color: #a5a798;
+  font-size: 14px;
+  margin: 30px 20px 30px 90px;
+}
+
+/* line 236, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#wp1 {
+  font-family: KronaOne;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(43, 43, 43, 0.5);
+  color: #4e99ff;
+  font-size: 16px;
+}
+/* line 244, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#wp1 p {
+  margin-bottom: 200%;
+}
+
+/* line 249, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#wp2 {
+  font-family: KronaOne;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(43, 43, 43, 0.5);
+  color: #4e99ff;
+  font-size: 16px;
+}
+/* line 257, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/registration.scss */
+div#wp2 p {
+  margin-bottom: 200%;
+}
+/* line 4, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+div#mail_list {
+  margin-top: 50px;
+}
+
+/* line 9, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+table#mail_table {
+  margin: 0 auto;
+}
+/* line 12, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+table#mail_table th, table#mail_table td {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 18, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+div#log_panel {
+  margin-top: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+/* line 24, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+div#mail_log_container {
+  width: 600px;
+  clear: both;
+}
+
+/* line 29, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+div#mail_log_container input {
+  width: 100%;
+  clear: both;
+}
+
+/* line 34, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#login_panel {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 40, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#rey_log_tc, #rey_log_pass {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 45, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+div#mail_log_container label {
+  color: #7cd6fe;
+  font-weight: 600;
+}
+
+/* line 50, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#rey_log_sub {
+  color: #87aaff;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 130px;
+}
+
+/* line 58, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#rey_log_sub:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 64, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+p#rey_page_hgd {
+  max-width: 500px;
+  min-width: 500px;
+  color: #87aaff;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+/* line 73, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+p#log_error {
+  max-width: 500px;
+  min-width: 500px;
+  color: #fe0c00;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+/* line 83, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+div#rey {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+/* line 90, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#rey_form select {
+  background-color: transparent;
+  color: rgba(249, 144, 23, 0.82);
+  border: solid 1px rgba(249, 144, 23, 0.82);
+  font-size: 16px;
+}
+
+/* line 97, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#rey_form select:active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 101, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#yorum {
+  width: 190px;
+  height: 80px;
+  resize: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(249, 144, 23, 0.82);
+}
+
+/* line 110, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+table#rey_form_table {
+  max-width: 700px;
+  color: #35a2ff;
+  margin: 0 auto;
+}
+/* line 114, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+table#rey_form_table tr {
+  background-color: rgba(0, 0, 0, 0.36);
+}
+/* line 117, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+table#rey_form_table th, table#rey_form_table td {
+  padding: 20px;
+}
+
+/* line 122, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#rey_sub {
+  color: #87aaff;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 130px;
+}
+
+/* line 130, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+#rey_sub:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 134, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+div#r_use {
+  font-family: KronaOne;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(43, 43, 43, 0.5);
+  color: #4e99ff;
+  font-size: 16px;
+}
+/* line 142, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/rey.scss */
+div#r_use p {
+  margin-bottom: 200%;
+}
+/* line 4, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#select_panel {
+  font-family: PT_Sans-Caption-Web;
+  color: #CCCCCC;
+  display: inline-flex;
+  width: 180px;
+}
+/* line 9, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#select_panel ul#category_list {
+  list-style: none;
+  width: 180px;
+}
+/* line 12, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#select_panel ul#category_list li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 16px;
+}
+/* line 17, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#select_panel ul#category_list li:hover {
+  font-size: 18px;
+  color: #35a2ff;
+}
+
+/* line 24, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#spec_select {
+  margin-left: 50px;
+  margin-top: 30px;
+  max-width: 1px;
+}
+
+/* line 30, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#unselect {
+  margin-top: 110px;
+  max-width: 500px;
+}
+
+/* line 35, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#hastane_optt, #il_optt, #ilce_optt, #doktor_optt, #hasta_optt {
+  max-width: 500px;
+  min-width: 500px;
+  background-color: rgba(105, 249, 230, 0.42);
+  color: #000000;
+}
+
+/* line 42, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#un_select {
+  max-width: 500px;
+  min-width: 500px;
+  background-color: rgba(105, 249, 230, 0.42);
+  color: #000000;
+  display: none;
+}
+
+/* line 50, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#stat_opt_sub {
+  color: #87aaff;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-left: 50px;
+  width: 130px;
+}
+
+/* line 58, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#stat_opt_sub:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 62, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+p#hsg {
+  font-family: PT_Sans-Caption-Web;
+  max-width: 500px;
+  min-width: 500px;
+  color: #87aaff;
+  text-align: center;
+  margin-left: 200px;
+}
+
+/* line 71, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+th, td {
+  border: solid 2px transparent;
+}
+
+/* line 75, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+th {
+  border-bottom-width: 2px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #35a2ff;
+}
+
+/* line 80, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+td {
+  color: #63bea5;
+}
+
+/* line 84, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* line 88, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+tr:nth-child(odd) {
+  background-color: rgba(74, 74, 74, 0.45);
+}
+
+/* line 92, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+tr:hover {
+  background-color: rgba(124, 214, 254, 0.25);
+}
+
+/* line 96, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#veri {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 104, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+p#re_hgd {
+  font-family: PT_Sans-Caption-Web;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: 200px;
+  color: #87aaff;
+  margin-bottom: 50px;
+}
+
+/* line 113, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#baz_puan {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 119, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#baz_puan label {
+  color: #5775f4;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* line 125, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#baz_puan input[type=number] {
+  background-color: rgba(0, 0, 0, 0.44);
+  color: #ffffff;
+  border: 1px solid #ae4626;
+  margin-left: 5px;
+  text-align: center;
+}
+
+/* line 133, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#baz_puan_sub {
+  color: #87aaff;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 1px #87aaff;
+  font-size: 14px;
+  margin-left: 15px;
+  width: 100px;
+}
+
+/* line 141, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#baz_puan_sub:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 145, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#re_calc_but {
+  color: #63bea5;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 1px #63bea5;
+  font-size: 14px;
+  width: 170px;
+  height: 40px;
+  margin-top: 30px;
+}
+
+/* line 154, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+#re_calc_but:hover {
+  background-color: rgba(124, 214, 254, 0.25);
+}
+
+/* line 158, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+fieldset#baz_p {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+/* line 164, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#donem_tablo {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* line 168, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+table#donem_list {
+  margin: 0 auto;
+}
+
+/* line 174, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+p#dr_hgd {
+  font-family: PT_Sans-Caption-Web;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: 300px;
+  color: #87aaff;
+  margin-bottom: 50px;
+}
+
+/* line 183, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+div#veri_tablosu {
+  width: 100%;
+}
+
+/* line 186, /home/bilgekagan/striPPeace/Ruby/drRey/app/assets/stylesheets/statistic.scss */
+table#dr_basarim {
+  width: 700px;
+  margin: 0 auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+@import "fonts.scss";

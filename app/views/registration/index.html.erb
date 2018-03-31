@@ -1,0 +1,60 @@
+<div id="wrapper">
+  <p>
+    <span style="font-size: 24px; color: rgba(223,102,17,0.96)">DrRey</span> Platformuna hoşgeldiniz. Sistemin kullanımına dair kısa bir bilgi
+    verilecektir.
+  </p>
+  <p>
+    Sol taraftaki panelde bulunan linkler site içinde dolaşmanız için
+    kullanılacaktır. <br>
+    <br>
+    "Ana Sayfa" şu an içinde bulunduğumuz sayfayı belirtmektedir. <br>
+    <br>
+    "Hasta Kayıt" sayfası, hastaların muayene için kayıt edildiği sayfayı
+    belirtmektedir.
+    <br> <br>
+    "Doktor Kayıt/Güncelleme" sayfası sisteme yeni bir doktor eklemek için
+    veya var olan doktorların çalıştığı kurumları değiştirmek için kullanılır. <br>
+    <br>
+    "Mail Listesi" her muayene kaydından sonra ilgili hastaya gönderilecek olan
+    mail sistemini simüle etmektedir. Bu sayfaya girdiğiniz zaman karşınıza bir
+    'Login' ekranı, ve bir tablo çıkacaktır. Tabloda, muayene için kayıt edilen
+    hastanın Rey kullanabilmek için gereken şifre ve TCNumarası bulunmaktadır.
+    Bu bilgileri kullanarak ilgili hastaya ait Rey kullanım sayfasına giriş
+    yapabilir. Rey kullanıldıktan sonra hastanın ismi listeden kaybolacak ve
+    aynı bilgiler ile bir kez daha giriş yapamayacaksınız. Eğer muayene kaydı
+    yapıldıktan 1 SAAT sonrasına kadar hasta Rey kullanmaz ise, Rey kullanım
+    hakkı kaybolur ve ismi yine listeden silinir. Burada belirlenen 1 SAAT süresi
+    <b>TEST</b> içindir. Sistem planlanmasında bu süre 4 GÜN olarak belirlenmiştir.
+    <br> <br>
+    "İstatistik Sayfası" hesaplanan verilerin görüntülenebilmesi için kurulmuştur.
+    Burada farklı kategoriler için veri bulabilirsiniz. İl, ilçe, Hastane ve Doktor
+    isimleri sistemin TEST edilebilmesi için kurulum sırasında yüklenecek şekilde
+    ayarlanmıştır. Doktorlar dışında bulunan diğer 3 veri, gerçek karşılığı bulunan
+    verilerdir. İlk değer olarak birçok alana 0(sıfır) girilmiştir. Rey kullanımı
+    oldukça ve dönemlik hesaplama yapıldıkça bu veriler de güncellenecektir.
+    <br> <br>
+    "Dönemlik Hesaplama" sayfası yine TEST için kurulmuştur. Normal şartlarda sistem
+    AYLIK 1 defa olarak dönemlik hesaplama yapmaktadır. Ancak bu sayfa içerisinde
+    dilediğiniz zaman dönemlik hesaplama işlem dizisini başlatabilirsiniz. Ayrıca
+    sayfa içerisinde 'BazPuan' isimli rey puanını da ayarlayabilirsiniz. Bu puan
+    ülke için verilen kalite puanıdır. 0-100 arası değer alabilir. Memnuniyet değerleri
+    ve doktorların 'Band Verileri' bu puana göre hesaplanmaktadır.
+    <br> <br>
+    "Doktor Başarım Verileri" doktorlara ait verileri göstermektedir. Bu verilerden
+    bazılarına "İstatistik Sayfası"ndan da ulaşabilirsiniz ancak 'Band Verisi'ne,
+     yani doktorun aldığı ceza ve ödüllere yalnızca bu bölümden ulaşabilirsiniz.
+    Ayrıca tabloda doktorlara ait ORTALAMA Rey puanları da yer almaktadır.
+  </p>
+  <p>
+    Burada tasarlanan arayüz tamamiyle TEST işlemleri içindir. Veritabanı incelenirse
+    çok daha fazla çeşitlikte verinin çekilebileği görülmektedir. Ancak bu aşamada
+    verileri fazla çeşitlendirmeden, programın felsefesini anlatmaya çalıştım.
+  </p>
+  <p>
+    Proje raporunda bahsettim ancak bir kez daha dile getirmek istiyorum. Ruby
+    On Rails platformuna hakim olmayan bir kişinin kodları inceleyip anlaması
+    neredeyse mümkün değildir. Çünkü Rails kendi içerisinde sıkı bir hiyerarşiye
+    sahiptir. Yapılacak her işlemin kendine özgü yeri vardır. O sebeple kod
+    incelenecekse eğer Rails yapısına hakim olmak zaruridir.
+  </p>
+</div>

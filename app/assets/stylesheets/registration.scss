@@ -1,0 +1,260 @@
+// Place all the styles related to the registration controller here.
+// They will automatically be included in application.css.
+
+div#hasta_kayit_form{
+  width: 100%;
+  text-align: left;
+  margin-top: 100px;
+}
+
+#in_container select{
+  width: 300px;
+}
+
+
+#hasta_svs_sel{
+  margin-left: 25px;
+}
+#hasta_hstn_sel{
+  margin-left: 11px;
+}
+#hasta_dr_sel{
+  margin-left: 19px;
+}
+
+
+#hasta_kayit{
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+div#in_container label{
+  color: #7cd6fe;
+  font-weight: 600;
+}
+legend{
+  color: #63bea5;
+  font-size: 20px;
+}
+
+#hasta_isim_in, #hasta_syisim_in, #hasta_tc_in, #hasta_eposta,
+#hasta_hstn_sel, #hasta_svs_sel, #hasta_dr_sel{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div#in_container{
+  width: 600px;
+  clear: both;
+}
+div#in_container input{
+  width: 100%;
+  clear: both;
+}
+
+fieldset{
+  //margin-left: 185px;
+  margin: 0 auto;
+  width: 600px;
+  background-color: rgba(0,0,0,0.46);
+}
+
+#hasta_reg_sub{
+  color: #87aaff;
+  background-color: rgba(0,0,0,0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-left: 225px;
+  margin-top: 30px;
+  width: 130px;
+}
+#hasta_reg_sub:hover{
+  background-color: rgba(0,0,0,0.25);
+}
+
+// ###############################################
+
+div#dr_kayit_form{
+  width: 100%;
+  text-align: left;
+  margin-top: 40px;
+}
+
+div#dr_container1{
+  width: 600px;
+  clear: both;
+}
+div#dr_container1 input{
+  width: 100%;
+  clear: both;
+}
+
+div#dr_container1 label{
+  color: #7cd6fe;
+  font-weight: 600;
+}
+
+#doktor_kayit{
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#dr_container1 select{
+  width: 300px;
+}
+
+#dr_isim_in, #dr_soyisim_in, #dr_tc_in,
+#dr_hastane_sel, #dr_servis_sel, #dr_ilce_sel, #dr_il_sel{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#dr_hastane_sel{margin-left: 15px;}
+#dr_servis_sel{margin-left: 29px}
+#dr_ilce_sel{margin-left: 45px;}
+#dr_il_sel{margin-left: 59px;}
+
+#dr_reg_sub{
+  color: #87aaff;
+  background-color: rgba(0,0,0,0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-left: 225px;
+  margin-top: 30px;
+  width: 130px;
+}
+#dr_reg_sub:hover{
+  background-color: rgba(0,0,0,0.25);
+}
+
+// ################################################
+
+div#dr_update_form{
+  width: 100%;
+  text-align: left;
+  margin-top: 40px;
+  display: none;
+  padding-bottom: 118px;
+}
+
+div#dr_container2{
+  width: 600px;
+  clear: both;
+}
+div#dr_container2 input{
+  width: 100%;
+  clear: both;
+}
+
+div#dr_container2 label{
+  color: #7cd6fe;
+  font-weight: 600;
+}
+
+#doktor_upt{
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#dr_container2 select{
+  width: 300px;
+}
+
+#dr_isim_upt, #dr_hastane_upt, #dr_servis_upt, #dr_ilce_upt, #dr_il_upt{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#dr_isim_upt{margin-left: 15px;}
+#dr_hastane_upt{margin-left: 97px;}
+#dr_servis_upt{margin-left: 111px;}
+#dr_ilce_upt{margin-left: 128px;}
+#dr_il_upt{margin-left: 142px;}
+
+#dr_upt_sub{
+  color: #87aaff;
+  background-color: rgba(0,0,0,0.45);
+  border: solid 1px #87aaff;
+  font-size: 16px;
+  margin-left: 225px;
+  margin-top: 30px;
+  width: 130px;
+}
+#dr_upt_sub:hover{
+  background-color: rgba(0,0,0,0.25);
+}
+
+// ###########################################
+
+div#buttons{
+  display: inline-flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#kayit_but{
+  color: #63bea5;
+  // background-color: rgba(0,0,0,0.45);
+  border: solid 1px #63bea5;
+  font-size: 14px;
+  width: 130px;
+  height: 40px;
+  margin-left: 350px;
+}
+
+#upt_but{
+  color: #63bea5;
+  // background-color: rgba(0,0,0,0.45);
+  border: solid 1px #63bea5;
+  font-size: 14px;
+  width: 130px;
+  margin-left: 20px;
+  height: 40px;
+}
+
+.but_active{
+  background-color: rgba(124,214,254,0.25);
+}
+
+.but_passive{
+  background-color: rgba(0,0,0,0.45);
+}
+
+// ############################################3
+
+div#wrapper{
+  font-family: KronaOne;
+  width: 750px;
+  color: #a5a798;
+  font-size: 14px;
+  margin: 30px 20px 30px 90px;
+}
+
+div#wp1{
+  font-family: KronaOne;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(43,43,43,0.5);
+  color: #4e99ff;
+  font-size: 16px;
+  p{
+    margin-bottom: 200%;
+  }
+}
+
+div#wp2{
+  font-family: KronaOne;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(43,43,43,0.5);
+  color: #4e99ff;
+  font-size: 16px;
+  p{
+    margin-bottom: 200%;
+  }
+}

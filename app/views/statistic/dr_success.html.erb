@@ -1,0 +1,33 @@
+<p id="dr_hgd" >
+  Sistemde kayıtlı bulunan tüm doktorların başarım verileridir.
+</p>
+<div id="veri_tablosu">
+  <table id="dr_basarim">
+    <tr>
+      <th>..</th>
+      <th>İsim</th>
+      <th>Soyisim</th>
+      <th>TCNumarası</th>
+      <th>OrtalamaReyPuanı</th>
+      <th>BandVerisi</th>
+      <th>ReyKatılımSayısı</th>
+      <th>ÇalıştığıServis</th>
+      <th>ÇalıştığıKurumKodu</th>
+    </tr>
+    <% @doktor_basarim[:basarim_data].each_with_index do |item, index| %>
+        <tr>
+          <td><%= index + 1 %># </td>
+          <td><%= item[0].to_s %></td>
+          <td><%= item[1].to_s %></td>
+          <td><%= item[2].to_s %></td>
+          <td><%= item[3].to_f %></td>
+          <td><%= item[4].to_i %></td>
+          <td><%= item[5].to_i %></td>
+          <td><%= item[6].to_s %></td>
+          <td><%= item[7].to_s %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>
+
+<% javascript_include_tag 'dr_success.js' %>

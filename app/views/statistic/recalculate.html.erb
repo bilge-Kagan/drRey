@@ -1,0 +1,38 @@
+<p id="re_hgd">
+  DrRey hesaplamalarında kullanılacak olan "BazPuan" değerini buradan
+  ayarlayabilirsiniz. Ancak değerin 0-100 arası olmasına dikkat ediniz.
+  <br>
+  Ek olarak programın ayarlanan süresinden önce dönemlik hesaplama
+  yapmak istiyorsanız burada bulunan butonu kullanabilirsiniz. Aşağıdaki
+  tabloda sistemde kayıtlı dönem değerlerini görebilirsiniz.
+</p>
+<fieldset id="baz_p">
+  <div id="baz_puan">
+    <%= form_for :baz_puan, url: recalc_path, html:{id: 'baz_puan_set'} do |f| %>
+        <%= f.label 'Baz Puan :', for: 'baz_puan_in' %>
+        <%= f.number_field :rey_puani, min: 0, max: 100, step: 0.00001, value: @act_response[:bz_puan], html: {id: 'baz_puan_in', size: 4} %>
+        <%= f.submit('Ayarla', id: 'baz_puan_sub') %>
+    <% end %>
+
+
+    <%= button_to('DönemlikHesaplama',{controller: 'statistic', action: :recalculate, recalc: true, method: :post},
+                {id: 're_calc_but'}) %>
+  </div>
+</fieldset>
+<div id="donem_tablo">
+  <table id="donem_list">
+    <tr>
+      <th>..</th>
+      <th>Başlangıç</th>
+      <th>Bitiş</th>
+    </tr>
+    <% @act_response[:donem_list].each do |item| %>
+        <tr>
+          <td><%= item[0].to_i %></td>
+          <td><%= item[1].to_s %></td>
+          <td><%= item[2].to_s %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>
+<% javascript_include_tag 'recalculate.js' %>

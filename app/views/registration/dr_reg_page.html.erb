@@ -1,0 +1,63 @@
+<div id="buttons">
+  <%= button_to 'Yeni Kayıt', 'dr_reg_page/#', :method => :get, id: 'kayit_but', class: 'but_active' %>
+  <%= button_to 'Güncelleme', 'dr_reg_page/#', :method => :get, id: 'upt_but', class: 'but_passive' %>
+</div>
+<div id="dr_kayit_form">
+  <fieldset>
+    <legend>Doktor Kayıt</legend>
+    <%= form_for :doktor_kayit, url: dr_reg_path, html: {id: 'doktor_kayit'} do |f| %>
+        <div id="dr_container1">
+          <%= f.label 'İsim :' %>
+          <%= f.text_field :isim, id: 'dr_isim_in' %>
+          <br>
+          <%= f.label 'Soyisim :' %>
+          <%= f.text_field :soyisim, id: 'dr_soyisim_in' %>
+          <br>
+          <%= f.label 'TC No :' %>
+          <%= f.number_field :tc, type: 'number', maxlength: 11, id: 'dr_tc_in' %>
+          <br>
+          <%= f.label 'İl :' %>
+          <%= f.select :il, il_select(@wrapper_hash[:il]), {prompt: 'İl Seçiniz'}, :id => 'dr_il_sel' %>
+          <br>
+          <%= f.label 'İlçe :' %>
+          <%= f.select :ilce, ilce_select(@wrapper_hash[:ilce]), {prompt: 'İlçe Seçiniz'}, :id => 'dr_ilce_sel' %>
+          <br>
+          <%= f.label 'Hastane :' %>
+          <%= f.select :hastane, hastane_select(@wrapper_hash[:hastane]), {prompt: 'Hastane Seçiniz'}, :id => 'dr_hastane_sel' %>
+          <br>
+          <%= f.label 'Servis :' %>
+          <%= f.select :servis, servis_select(@wrapper_hash[:servis]), {prompt: 'Servis Seçiniz'}, :id => 'dr_servis_sel' %>
+          <br>
+        </div>
+        <%= f.submit('Kayıt', :id => 'dr_reg_sub') %>
+    <% end %>
+  </fieldset>
+</div>
+
+<div id="dr_update_form">
+  <fieldset>
+    <legend>DrRey # Doktor Kayıt Güncelleme</legend>
+    <%= form_for :doktor_upt, url: dr_reg_path, html: {id: 'doktor_upt'} do |t| %>
+        <div id="dr_container2">
+          <%= t.label 'Doktor İsim/Soyisim :' %>
+          <%= t.select :isim_soyisim, doktor_select(@wrapper_hash[:doktor]), {prompt: 'İsim ve Soyisim'}, :id => 'dr_isim_upt' %>
+          <br>
+          <%= t.label 'İl :' %>
+          <%= t.select :u_il, il_select(@wrapper_hash[:il]), {prompt: 'İl Seçiniz'}, :id => 'dr_il_upt' %>
+          <br>
+          <%= t.label 'İlçe :' %>
+          <%= t.select :u_ilce, ilce_select(@wrapper_hash[:ilce]), {prompt: 'İlçe Seçiniz'}, :id => 'dr_ilce_upt' %>
+          <br>
+          <%= t.label 'Hastane :' %>
+          <%= t.select :u_hastane, hastane_select(@wrapper_hash[:hastane]), {prompt: 'Hastane Seçiniz'}, :id => 'dr_hastane_upt' %>
+          <br>
+          <%= t.label 'Servis :' %>
+          <%= t.select :u_servis, servis_select(@wrapper_hash[:servis]), {prompt: 'Servis Seçiniz'}, :id => 'dr_servis_upt' %>
+          <br>
+        </div>
+        <%= t.submit('Güncelle', :id => 'dr_upt_sub') %>
+    <% end %>
+  </fieldset>
+</div>
+
+<% javascript_include_tag 'dr_reg_page.js' %>

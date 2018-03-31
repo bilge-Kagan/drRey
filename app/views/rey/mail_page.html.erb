@@ -1,0 +1,37 @@
+<div id="log_panel">
+  <fieldset>
+    <legend>Rey Giriş Paneli</legend>
+    <%= form_for :rey_login, url: rey_page_path, html: {id: 'login_panel'} do |f| %>
+        <div id="mail_log_container">
+          <%= f.label 'TC Numarası :' %>
+          <%= f.number_field :tc, type: 'number', id: 'rey_log_tc', autocomplete: 'off' %>
+          <br>
+          <%= f.label 'Şifre' %>
+          <%= f.password_field :pass, {id: 'rey_log_pass', autocomplete: 'off'} %>
+          <br>
+        </div>
+        <%= f.submit('Giriş', id: 'rey_log_sub') %>
+    <% end %>
+  </fieldset>
+</div>
+
+<div id="mail_list">
+  <table id="mail_table">
+    <tr>
+      <th>Hasta İsim ve Soyisim</th>
+      <th>Hasta TC</th>
+      <th>Muayene Tarihi</th>
+      <th>Şifre</th>
+    </tr>
+    <% @mails.each do |item| %>
+      <tr>
+        <td><%= item[1].to_s + ' ' + item[2].to_s %></td>
+        <td><%= item[3].to_s %></td>
+        <td><%= item[6].to_s %></td>
+        <td><%= item[5].to_s %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<% javascript_include_tag 'mail_page.js' %>
