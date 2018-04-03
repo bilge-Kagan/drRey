@@ -1,12 +1,12 @@
 # DrRey
-***Attention:*** *Only language is supported is Turkish in this project. So remaining part of the
+***Attention:*** *Only language supported is Turkish in this project. So remaining part of the
 README is Turkish.*
 
 
 ### Tanım
-DrRey, *kamu denetimi* kapsamında üretilmiş web tabanlı bir yazılımdır. Burada amaçlanan, kamunun
-belki de en önemli ayağını oluşturan ***doktorların*** tümüyle toplum denetimi altına
-alınmasıdır. Dolayısıyla toplumun tüm fertlerini kapsamaktadır.
+DrRey, *kamu denetimi* kapsamında üretilmiş web tabanlı bir yazılımdır. Burada amaçlanan, kamu çalışanlarının
+belki de en önemli ayağını oluşturan *doktorların*, tümüyle toplum denetimi altına
+alınmasıdır. Dolayısıyla proje kullanım bakımından toplumun tüm fertlerini kapsamaktadır.
 
 ### Çalışma Prensibi
 Sistem temel olarak *anket* mantığına dayanmaktadır. Ancak basit bir anket düzeneğinden çok
@@ -31,12 +31,12 @@ sistemden silinmekte ve hasta ilgili muayene ile ilgili rey kullanma hakkını k
 
 4. Her ay sonunda kayıtlı doktorlaraın her birisi için toplanan puanların ortalaması alınır. Ancak sadece belli
 bir hasta sayısına ve o hastalardan da belli bir rey kullanım oranına ulaşmış doktorlar hesaplamalara katılır.
-Bu ortalama en baştauzmanlar tarafından belirlenen taban puan bandında kalıyorsa doktora cezai işlem uygulanr.
+Bu ortalama en başta uzmanlar tarafından belirlenen taban puan bandında kalıyorsa doktora cezai işlem uygulanr.
 Tavan bandında yer alırsa hanesine başarı olarak yazılır. Orta bantta kalması durumunda ise herhangi bir
 işlem yapılmamaktadır. Buradaki ceza/ödül unsuru sistemi kullanan kurum tarfından belirlenmektedir.
 (Bence maaş üzerinden olmalı.)
 
-5. Hastalar için de ayrı bir kayıt ile *rey* kullanıp kullanmadığı, kullandıysa kaç puan verdiği, ortalama puanı,
+5. Hastalar için de ayrı bir tabloda *rey* kullanıp kullanmadığı, kullandıysa kaç puan verdiği, ortalama puanı,
 ortalama memnuniyeti gibi veriler tutulmaktadır. Ayrıca *rey sayfası* içerisinde opsiyonel olarak hastadan
 özel yorum da alınmaktadır. Tabi bu yorumlar da hasta verisi olarak tutulmakta. İleride bir itiraz
 durumunda bu yorumlar her iki taraf için de delil niteliği taşımaktadır. Aklımdaki kurguda *rey* kullanan
@@ -54,15 +54,15 @@ tutulmaktadır. Veritabanı incelendiğinde hangi veriler hangi birimler için t
 * En başta da belirtildiği gibi ilk amaç *doktorların* halk denetimine tâbi tutulmasıdır. Böylece sağlık kalitesi
 belirlenen *baz puanlar* ile artırılabilir veya belli bir seviyede tutulabilir.
 * Tüm muayene bilgileri tutulduğu için hastaların herhangi bir bölgede hangi servise gittikleri dönemlik
-olarak izlenebilir. Böylece bölgenin hastalık durumu, oranı, tanısı rahatlıkla takip edilebilir. Örnek vermek
-gerekirse; diyelim ki bu dönem Elazığ şehrinde ciddi bir hasta artşı gözleniyor. Bu hasların da büyük bölümü
-'akciğer hastalıkları' servisine gitmiş. O halde diyebiliriz ki Elazığ şehrinde hava yoluyla yayılan bir enfeksiyon
+olarak izlenebilir. Böylece bölgenin hastalık durumu, oranı veya hastalık tanısı rahatlıkla takip edilebilir. Örnek vermek
+gerekirse; diyelim ki geçen dönem Elazığ şehrinde ciddi bir hasta artışı gözleniyor. Bu hasların da büyük bölümü
+'akciğer rahatsızlıkları' ile ilgili servise gitmiş. O halde diyebiliriz ki Elazığ şehrinde hava yoluyla yayılan bir enfeksiyon
 bulunmakta veya Elazığ şehrinde hava kirliliği artışı var.. Hatta bu hastaların yaş aralığı büyük oranda 25-40
-arasında ise diyebiliriz ki akciğer rahatsızlıkları tetikleyen ortamlara sahip bir iş yerinde iş güvenliği
+arasında ise diyebiliriz ki akciğer rahatsızlıklarını tetikleyen ortamlara sahip bir iş yerinde iş güvenliği
 açığı bulunmaktadır. Bu projenin ilerleyen aşamalarında tutulan verileri yorumlaması için bir yapay zekâ çalışması
 da yapılabilir.
 
-Bu addeler elde edilebilecek kazanımlardan sadece ikisidir. Tutulan onca veriden başka birçok çıkarım yapılabilir.
+Bu maddeler elde edilebilecek kazanımlardan sadece ikisidir. Tutulan onca veriden başka birçok çıkarım yapılabilir.
 Bu da projenin geliştirilmeye gayet açık olduğunun göstergesidir.
 
 ### Veritabanı İncelemesi
@@ -97,17 +97,17 @@ bu da göz önünde bulundurulmuş ve iki sistem arasındaki iletişim en az dü
 Son olarak, `/db/SQL_Data_Initializer` içerisinde bulunan *.sql* scriptleri içerisinde başlangıç verileri
 bulundurmaktadır. Bu verilerden sadece `proc_dr_kayit_list.sql` hayali isimler ve TC kimlik
 numaraları içermekte olup gerçekle hiçbir bağlantısı yoktur. Diğer veriler ise gerçek değerlere
-sahiptir; Sağlık Bakanlığı verilerinden elde edilmiştir.
+sahiptir; Sağlık Bakanlığı tarafından sağlanan verilerinden elde edilmiştir.
 
 ### Arayüz İncelemesi
-**DrRey** test amaçlı yapılmiş basit bir arayüze sahiptir. Örneğin arayüz içerisinde *Doktor Ekleme*
+**DrRey** test amaçlı yapılmış basit bir arayüze sahiptir. Örneğin arayüz içerisinde *Doktor Ekleme*
 veya manuel *Dönemlik Hesaplama* seçenekleri bulunmakta. Ayrıca tüm istatistiksel verilere
 erişim açıktır. Elbette halka açık, kullanımda olan bir **DrRey** projesinde bunlara erişimin
 olmaması gerekiyor. Arayüzün amacı sadece *TEST*. Bunun bilinciyle anlatıma devam edelim..
 
 !["Hasta Kayıt"](https://github.com/bilge-Kagan/drRey/blob/master/ss/Screenshot%20at%202017-06-23%2011-57-27.png "Hasta Kayıt")
 
-Yukarıda *Hasta Kayıt* paneli gözükmektedir. Bu panelden test amaçlı hasta kayıdı yapılmaktadır.
+Yukarıda *Hasta Kayıt* paneli gözükmektedir. Bu panelden test amaçlı hasta kaydı yapılmaktadır.
 Normalde bu işlem yukarıda da bahsettiğim gibi *API* yardımıyla olmalıdır. Hastamız buradan
 kaydedildikten sonra sistem bekletmeden şifresini oluşturmakta ve e-posta yoluyla göndermektedir.
 
@@ -142,10 +142,6 @@ basit bir şekilde sorgulama yapılabilir.
 değildir. Genel olarak hepsinin ortalaması veya toplamı şeklindedir. Ayrıca doktorlara ait başarım gerçek zamanlı
 olarak da izlenebilir. Yani dönemlik hesaba girmeden de o dönemdeki bazı verilere ulaşılabilir ancak arayüze bu
 eklenmemiştir. 
-
-Sonuç olarak, sistem kullanıma sokulabilecek bir arayüze sahip değildir. İnşallah burada hem arayüz geliştirmesi
-yapılacak, hem *SQL* içerisinde bulunan bazı hesap hataları varsa onlar giderilecek, hem de uygun *API* geliştirilmeye
-çalışılacaktır.
 
 ### Kurulum
 *Ruby Versiyon*: **2.3.1** 
@@ -205,5 +201,6 @@ almıştır. Bazı temel eksikleri bulunmakta. Bunlar öncelikle *arayüz* ve *A
 *SQL* üzerinde de iyileştirmelerin yapılması lazım elbette.
 İnşallah zaman buldukça ilgileceğim, felsefesi açısından değer verdiğim bir projedir.
 
+### İletişim
 Herhangi bir soru veya öneri için **dore.fy@gmail.com** adresini kullanabilirsiniz..        
   
