@@ -1,12 +1,12 @@
 # DrRey
-***Attention:*** *Only language is supported is Turkish in this project. So remaining part of the
+***Attention:*** *Only language supported is Turkish in this project. So remaining part of the
 README is Turkish.*
 
 
 ### Tanım
-DrRey, *kamu denetimi* kapsamında üretilmiş web tabanlı bir yazılımdır. Burada amaçlanan, kamunun
-belki de en önemli ayağını oluşturan ***doktorların*** tümüyle toplum denetimi altına
-alınmasıdır. Dolayısıyla toplumun tüm fertlerini kapsamaktadır.
+DrRey, *kamu denetimi* kapsamında üretilmiş web tabanlı bir yazılımdır. Burada amaçlanan, kamu çalışanlarının
+belki de en önemli ayağını oluşturan *doktorların*, tümüyle toplum denetimi altına
+alınmasıdır. Dolayısıyla proje kullanım bakımından toplumun tüm fertlerini kapsamaktadır.
 
 ### Çalışma Prensibi
 Sistem temel olarak *anket* mantığına dayanmaktadır. Ancak basit bir anket düzeneğinden çok
@@ -55,14 +55,14 @@ tutulmaktadır. Veritabanı incelendiğinde hangi veriler hangi birimler için t
 belirlenen *baz puanlar* ile artırılabilir veya belli bir seviyede tutulabilir.
 * Tüm muayene bilgileri tutulduğu için hastaların herhangi bir bölgede hangi servise gittikleri dönemlik
 olarak izlenebilir. Böylece bölgenin hastalık durumu, oranı, tanısı rahatlıkla takip edilebilir. Örnek vermek
-gerekirse; diyelim ki bu dönem Elazığ şehrinde ciddi bir hasta artşı gözleniyor. Bu hasların da büyük bölümü
+gerekirse; diyelim ki geçen dönem Elazığ şehrinde ciddi bir hasta artışı gözleniyor. Bu hasların da büyük bölümü
 'akciğer hastalıkları' servisine gitmiş. O halde diyebiliriz ki Elazığ şehrinde hava yoluyla yayılan bir enfeksiyon
 bulunmakta veya Elazığ şehrinde hava kirliliği artışı var.. Hatta bu hastaların yaş aralığı büyük oranda 25-40
-arasında ise diyebiliriz ki akciğer rahatsızlıkları tetikleyen ortamlara sahip bir iş yerinde iş güvenliği
+arasında ise diyebiliriz ki akciğer rahatsızlıklarını tetikleyen ortamlara sahip bir iş yerinde iş güvenliği
 açığı bulunmaktadır. Bu projenin ilerleyen aşamalarında tutulan verileri yorumlaması için bir yapay zekâ çalışması
 da yapılabilir.
 
-Bu addeler elde edilebilecek kazanımlardan sadece ikisidir. Tutulan onca veriden başka birçok çıkarım yapılabilir.
+Bu maddeler elde edilebilecek kazanımlardan sadece ikisidir. Tutulan onca veriden başka birçok çıkarım yapılabilir.
 Bu da projenin geliştirilmeye gayet açık olduğunun göstergesidir.
 
 ### Veritabanı İncelemesi
@@ -100,7 +100,7 @@ numaraları içermekte olup gerçekle hiçbir bağlantısı yoktur. Diğer veril
 sahiptir; Sağlık Bakanlığı verilerinden elde edilmiştir.
 
 ### Arayüz İncelemesi
-**DrRey** test amaçlı yapılmiş basit bir arayüze sahiptir. Örneğin arayüz içerisinde *Doktor Ekleme*
+**DrRey** test amaçlı yapılmış basit bir arayüze sahiptir. Örneğin arayüz içerisinde *Doktor Ekleme*
 veya manuel *Dönemlik Hesaplama* seçenekleri bulunmakta. Ayrıca tüm istatistiksel verilere
 erişim açıktır. Elbette halka açık, kullanımda olan bir **DrRey** projesinde bunlara erişimin
 olmaması gerekiyor. Arayüzün amacı sadece *TEST*. Bunun bilinciyle anlatıma devam edelim..
@@ -142,10 +142,6 @@ basit bir şekilde sorgulama yapılabilir.
 değildir. Genel olarak hepsinin ortalaması veya toplamı şeklindedir. Ayrıca doktorlara ait başarım gerçek zamanlı
 olarak da izlenebilir. Yani dönemlik hesaba girmeden de o dönemdeki bazı verilere ulaşılabilir ancak arayüze bu
 eklenmemiştir. 
-
-Sonuç olarak, sistem kullanıma sokulabilecek bir arayüze sahip değildir. İnşallah burada hem arayüz geliştirmesi
-yapılacak, hem *SQL* içerisinde bulunan bazı hesap hataları varsa onlar giderilecek, hem de uygun *API* geliştirilmeye
-çalışılacaktır.
 
 ### Kurulum
 *Ruby Versiyon*: **2.3.1** 
@@ -205,5 +201,6 @@ almıştır. Bazı temel eksikleri bulunmakta. Bunlar öncelikle *arayüz* ve *A
 *SQL* üzerinde de iyileştirmelerin yapılması lazım elbette.
 İnşallah zaman buldukça ilgileceğim, felsefesi açısından değer verdiğim bir projedir.
 
+### İletişim
 Herhangi bir soru veya öneri için **dore.fy@gmail.com** adresini kullanabilirsiniz..        
   
