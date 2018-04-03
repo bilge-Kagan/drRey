@@ -199,7 +199,7 @@ Bu işlemlerden sonra sistemimiz çalıştırılmaya hazırdır.
 **DrRey**, kamu üzerindeki halk denetiminin ilk adımı olması dileğiyle *sağlık* sektörünü hedef
 almıştır. Bazı temel eksikleri bulunmakta. Bunlar öncelikle *arayüz* ve *API* dir. Ek olarak
 *SQL* üzerinde de iyileştirmelerin yapılması lazım elbette.
-İnşallah zaman buldukça ilgileceğim, felsefesi açısından değer verdiğim bir projedir.
+İnşallah zaman buldukça ilgileceğim, felsefesi açısından değer verdiğim bir projedir..
 
 ### İletişim
 Herhangi bir soru veya öneri için **dore.fy@gmail.com** adresini kullanabilirsiniz..        
