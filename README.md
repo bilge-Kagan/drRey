@@ -55,7 +55,7 @@ tutulmaktadır. Veritabanı incelendiğinde hangi veriler hangi birimler için t
 belirlenen *baz puanlar* ile artırılabilir veya belli bir seviyede tutulabilir.
 * Tüm muayene bilgileri tutulduğu için hastaların herhangi bir bölgede hangi servise gittikleri dönemlik
 olarak izlenebilir. Böylece bölgenin hastalık durumu, oranı veya hastalık tanısı rahatlıkla takip edilebilir. Örnek vermek
-gerekirse; diyelim ki geçen dönem Elazığ şehrinde ciddi bir hasta artışı gözleniyor. Bu hasların da büyük bölümü
+gerekirse; diyelim ki geçen dönem Elazığ şehrinde ciddi bir hasta artışı gözleniyor. Bu hastaların da büyük bölümü
 'akciğer rahatsızlıkları' ile ilgili servise gitmiş. O halde diyebiliriz ki Elazığ şehrinde hava yoluyla yayılan bir enfeksiyon
 bulunmakta veya Elazığ şehrinde hava kirliliği artışı var.. Hatta bu hastaların yaş aralığı büyük oranda 25-40
 arasında ise diyebiliriz ki akciğer rahatsızlıklarını tetikleyen ortamlara sahip bir iş yerinde iş güvenliği
@@ -72,7 +72,7 @@ veri tabanına erişmesi için kullanılmıştır, yani bir nevi GUI görevi gö
 Projenin kapsadığı insan sayısı bir hayli fazla olduğu için veritabanı dizaynı da aynı ölçekte efektif olmalıdır.
 Aşağıda veritabanı diagramı verilmektedir.
 
-![](https://github.com/bilge-Kagan/drRey/blob/master/ss/veritaban%C4%B1_diagram.png "Veritabanı Diagramı")
+!["Veritabanı Diagramı"](https://github.com/bilge-Kagan/drRey/blob/master/ss/veritaban%C4%B1_diagram.png "Veritabanı Diagramı")
 
 Diagram incelendiğinde tablolar arasındaki ilişkiler anlaşılabilir. Ayrıca `/db/schema.rb`
 dosyasından da tablolara ait özellikler daha ayrıntılı incelenebilir.
@@ -199,7 +199,7 @@ Bu işlemlerden sonra sistemimiz çalıştırılmaya hazırdır.
 **DrRey**, kamu üzerindeki halk denetiminin ilk adımı olması dileğiyle *sağlık* sektörünü hedef
 almıştır. Bazı temel eksikleri bulunmakta. Bunlar öncelikle *arayüz* ve *API* dir. Ek olarak
 *SQL* üzerinde de iyileştirmelerin yapılması lazım elbette.
-İnşallah zaman buldukça ilgileceğim, felsefesi açısından değer verdiğim bir projedir..
+İnşallah zaman buldukça ilgileceğim, felsefesi açısından değer verdiğim bir projedir.
 
 ### İletişim
 Herhangi bir soru veya öneri için **dore.fy@gmail.com** adresini kullanabilirsiniz..        
